@@ -1,0 +1,1 @@
+(function(){console.log("Welcome from main.coffee")}).call(this);
