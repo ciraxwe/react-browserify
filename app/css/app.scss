@@ -1,4 +1,5 @@
-// styles
- body {
+$background-color: #efefef;
 
- }
+body {
+    background-color: $background-color;
+}
