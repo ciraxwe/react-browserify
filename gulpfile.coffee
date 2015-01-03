@@ -25,6 +25,7 @@ gulp.task 'browserify', ->
     .pipe $.browserify
         debug: true,
         transform: [ 'reactify' ]
+    .pipe $.uglify preserveComments: 'some'
     .pipe gulp.dest '.tmp/js'
     .pipe gulp.dest 'dist/js'
     .pipe $.size title: 'browserify'
